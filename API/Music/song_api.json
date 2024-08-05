@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+        
+      "album": "Shape Of You",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio1.mp3"
+    },
+    {
+      "id": 2,
+  
+      "album": "See You Again",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio2.mp3"
+    },
+    {
+      "id": 3,
+  
+      "album": "Let Me Down Slowly",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio3.mp3"
+    },
+    {
+      "id": 4,
+  
+      "album": "Faded",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio4.mp3"
+    },
+    {
+      "id": 5,
+  
+      "album": "Believer",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio5.mp3"
+    },
+    {
+      "id": 6,
+  
+      "album": "Happier",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio6.mp3"
+    },
+    {
+      "id": 7,
+  
+      "album": "Alone",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio7.mp3"
+    },
+    {
+      "id": 8,
+  
+      "album": "On My Way",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio8.mp3"
+    },
+    {
+      "id": 9,
+  
+      "album": "Darkside",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio9.mp3"
+    },
+    {
+      "id": 10,
+  
+      "album": "Lily",
+      "artist":"abc",
+  
+      "link": "./API/Music/audio10.mp3"
+    }
+  ]
+  

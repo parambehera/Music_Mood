@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.cont {
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    /* justify-content: center; */
+    gap: 0vw;
+    align-items: center;
+
+}
+
+.left {
+    height: 100%;
+    width: 25%;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+}
+
+.right {
+    height: 100%;
+    width: 75%;
+    background: rebeccapurple;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background:rgb(39, 39, 59);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15;
+
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+nav>.ar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+nav>.LS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 25px;
+    border-radius: 50px;
+}
+
+.LS button {
+    /* height: 30px; */
+    height: 43px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 34px;
+    text-align: center;
+    color: white;
+    background: gray;
+    border: none;
+    cursor: pointer;
+}
+
+.left .Home {
+    height: 15%;
+    width: 100%;
+    background:rgb(39, 39, 59);
+    /* padding: 2vw; */
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    border-radius: 15px;
+}
+
+.home {
+    display: flex;
+    margin: 15px;
+    height: 100%;
+    gap: .5vw;
+    align-items: center;
+    cursor: pointer;
+    color:white;
+
+}
+
+.search {
+    display: flex;
+    margin: 15px;
+    height: 100%;
+    gap: .5vw;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+
+}
+.Library{
+    height: 75%;
+    width: 100%;
+    background:rgb(39, 39, 59);
+    /* padding: 2vw; */
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    border-radius: 15px;
+    /* overflow: auto; */
+    /* position: absolute; */
+}
+.heading{
+    background: rgb(47, 44, 44);
+    width: 96%;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    margin: 7px;
+    /* height: 100%; */
+    gap: .5vw;
+    align-items: center;
+    cursor: pointer;
+    font-size: 38px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.Musics{
+    height: 80%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap:.4vw;
+}
+ .SALM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+ }
+ .SA{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding-left: 25px;
+     /* list-style-type:decimal ; */
+}
+.Musics .Link{
+    display:none;
+}
+.Musics .green{
+    color: greenyellow;
+}
+.music-card{
+    width: 100%;
+    background:rgb(47, 47, 67);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:5px;
+    color: wheat;
+    cursor: pointer;
+    transition: 1s;
+}
+.music-card:active{
+    background: gray;
+}
+
+ .right .main{
+    height:80%;
+    width: 100%;
+    background: rgb(41,36,111);
+    background: linear-gradient(90deg, rgba(41,36,111,1) 0%, rgba(60,60,80,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 100%;
+    background: rgb(65, 65, 69);
+    /* justify-content: center; */
+    align-items: center;
+}
+footer .play{
+    /* align-items: center; */
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    background: rgb(101, 80, 41);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:16vw;
+    font-size: 20px;
+    border-radius:10px;
+    /* position: relative; */
+}
+
+.play button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+ #tal{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 19px;
+    padding-left: 6px;
+    width: 233px;
+    height: 58%
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vw;
+    /* position: absolute; */
+    /* left:480px; */
+
+}
+
+#artist{
+    font-size:15px;
+}
+footer .progressBar{
+    width: 100%;
+    height: 100%;
+    background:rgb(22, 22, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 600px;
+}
+.time{
+    height: 15px;
+    width: 40px;
+    background: #797575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}

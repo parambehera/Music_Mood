@@ -54,6 +54,7 @@ let mc = document.querySelector(".music-card");
       } else {
         audio.play();
       }
+      
     });
   };
 
@@ -62,7 +63,10 @@ let mc = document.querySelector(".music-card");
   // console.log(songs[j].link);
   let audio = new Audio(songs[j].link);
   player(audio, pbtn);
-
+   pbtn.addEventListener("click",()=>{
+    tittle.innerHTML=songs[j].album;
+    artist.innerHTML=songs[j].artist;
+   })
   backward.addEventListener("click", () => {
     if (i >= 0) i--;
     j = i % songs.length;
@@ -127,8 +131,41 @@ let mc = document.querySelector(".music-card");
     // console.log(min);
     // console.log(sec);
     duration.innerText = `${min}:${sec}`;
-    
   });
+  
+
+  const progressBar = document.querySelector('footer .progressBar input');
+
+// Update the progress bar when the audio is playing
+audio.addEventListener('timeupdate', () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  progressBar.value = progress;
+});
+
+// Seek through the audio when the progress bar is clicked
+progressBar.addEventListener('input', () => {
+  const seekTime = (progressBar.value / 100) * audio.duration;
+  audio.currentTime = seekTime;
+});
+
+// Play the audio
+document.querySelector('footer .play button').addEventListener('click', () => {
+  audio.play();
+});
+
+
+
+  humberger.addEventListener("click",()=>{
+    document.querySelector(".left").style.left=0;
+  })
+  cross.addEventListener("click",()=>{
+    document.querySelector(".left").style.left="-100%";
+  })
+
 // console.log( Array.from(document.querySelector(".Musics").getElementsByClassName("music-card")));
+document.addEventListener("DOMContentLoaded", function() {
+  const rangeInput = document.querySelector("input[type='range']");
+  rangeInput.value = 0;
+});
 
 })();
